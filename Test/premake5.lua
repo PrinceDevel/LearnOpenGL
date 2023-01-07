@@ -25,8 +25,8 @@ project "Test"
 
 	includedirs {
 		"src",
+		"res",
 		"../Engine/src",
-		"res",	
         
 		"../Vendors/GLFW/include",
 		"../Vendors/Glad/include",
@@ -54,17 +54,17 @@ project "Test"
         }
 
 	filter "configurations:Debug"
-		defines "RB_DEBUG"
+		defines "_CONFIG_DEBUG"
 		runtime "Debug"
 		symbols "on"
 
 	filter "configurations:Release"
-		defines "RB_RELEASE"
+		defines "_CONFIG_RELEASE"
 		runtime "Release"
 		optimize "on"
 
 	filter "configurations:Dist"
-		defines "RB_DIST"
+		defines "_CONFIG_DIST"
 		runtime "Release"
 		optimize "on"
 
