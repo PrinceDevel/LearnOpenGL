@@ -30,12 +30,14 @@ project "Test"
         
 		"../Vendors/GLFW/include",
 		"../Vendors/Glad/include",
+		"../Vendors/FileSystem/FileSystem/include",
 		"../Vendors/glm"
 	}
 
     links {
 		"Glad",
 		"GLFW",
+		"FileSystem",
         "Engine"
     }
 

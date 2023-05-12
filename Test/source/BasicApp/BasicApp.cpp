@@ -186,12 +186,12 @@ void BasicApp::OnScreenResize ()
         (float) WIDTH / (float) HEIGHT, 
         0.1f, 100.00f
     );
-    boxShader->setMat4("projection", projection);
     lightShader->setMat4("projection", projection);
+    boxShader->setMat4("projection", projection);
 }
 
 
-Application* CreateApplication()
-{
-    return new BasicApp(960, 540, "BASIC APP");
-}
+// Application* CreateApplication()
+// {
+//     return new BasicApp(960, 540, "BASIC APP");
+// }

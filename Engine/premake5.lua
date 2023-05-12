@@ -31,6 +31,7 @@ project "Engine"
         
 		"../Vendors/GLFW/include",
 		"../Vendors/Glad/include",
+		"../Vendors/FileSystem/FileSystem/include",
 		"../Vendors/glm"
 	}
 

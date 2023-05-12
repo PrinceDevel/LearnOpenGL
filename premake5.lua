@@ -14,6 +14,7 @@ out_dir = "%{wks.location}/bin/out/%{cfg.buildcfg}-%{cfg.system}-%{cfg.architect
 group "Dependencies"
 	include "Vendors/Glad"
 	include "Vendors/GLFW"
+	include "Vendors/FileSystem/FileSystem"
 group ""
 
 include "Engine/"
